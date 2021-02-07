@@ -2,6 +2,7 @@ import story from '../styles/Story.module.css'
 
 import Link from 'next/link'
 import { timeSince } from './timeSince'
+import { extractHostFromUrl } from './url'
 
 
 
@@ -12,7 +13,7 @@ export default function Story({ id, score, title, by, url, time, descendants }) 
         </span>
         <span className={story.title}>
             <a href={url}>{title}</a>
-            <a href={url} className={story.host}>({url})</a>
+            <a href={url} className={story.host}>({extractHostFromUrl(url)})</a>
         </span>
         <br />
         <span className={story.meta}>
