@@ -5,7 +5,7 @@ import { timeSince } from './timeSince'
 
 
 
-export default function Story({ id, score, title, user, url, time, comments }) {
+export default function Story({ id, score, title, by, url, time, descendants }) {
     return (<div className={story.story}>
         <span className={story.score}>
             {score}
@@ -16,7 +16,7 @@ export default function Story({ id, score, title, user, url, time, comments }) {
         </span>
         <br />
         <span className={story.meta}>
-            by <Link href={`user/${user}`}>{user}</Link> {timeSince(time)} ago | <Link href={`story/${id}`}>{comments + " comments"}</Link>
+            by <Link href={`user/${by}`}>{by}</Link> {timeSince(time)} ago | <Link href={`story/${id}`}>{descendants + " comments"}</Link>
         </span>
     </div>)
 }
