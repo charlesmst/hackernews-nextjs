@@ -23,10 +23,11 @@ export default function Home({ stories }) {
 
 export async function getStaticProps(context) {
   const topStories = await fetchTopStories()
-  
+
   return {
     props: {
       stories: topStories
     },
+    revalidate: 10
   }
 }
