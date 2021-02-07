@@ -1,0 +1,20 @@
+
+
+.main{
+    background-color: #fff;
+    position: relative;
+    line-height: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.text{
+    font-size: .9em;
+}
+.host, .meta{
+    font-size: .85em;
+    color: #999;
+}
+.meta a{
+    text-decoration: underline;
+}

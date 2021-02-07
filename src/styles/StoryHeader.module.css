@@ -1,0 +1,20 @@
+
+
+.story{
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.title{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.host, .meta{
+    font-size: .85em;
+    color: #999;
+}
+.meta a{
+    text-decoration: underline;
+}

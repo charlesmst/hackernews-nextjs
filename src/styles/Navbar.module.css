@@ -1,0 +1,35 @@
+.nav {
+    background-color: #f60;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container{
+    position: relative;
+    width: 800px;
+    margin:0 auto;
+    height: 55px;
+    display: block;
+    padding: 15px;
+}
+
+.logo img{
+    vertical-align: middle;
+    height: 16px;
+}
+.logo{
+    padding-right: 30px;
+}
+.route {
+    color: hsla(0,0%,100%,.8);
+    line-height: 24px;
+    -webkit-transition: color .15s ease;
+    transition: color .15s ease;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    letter-spacing: .075em;
+    margin-right: 1.8em;
+}
