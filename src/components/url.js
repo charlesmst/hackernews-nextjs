@@ -13,5 +13,8 @@ export function parseUrl(href) {
     }
 }
 export function extractHostFromUrl(url) {
+    if (!url) {
+        return null
+    }
     return parseUrl(url)?.host
 }

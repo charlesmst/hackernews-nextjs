@@ -5,11 +5,13 @@ import { timeSince } from './timeSince'
 
 
 
-export default function Comment({ user, time, text }) {
+export default function Comment({ id, by, time, text, totalReplies }) {
     return (<div className={style.main}>
         <span className={style.meta}>
-            by <Link href={`user/${user}`}>{user}</Link> {timeSince(time)} ago 
+            by <Link href={`user/${by}`}>{by || "Unknown"}</Link> {timeSince(time)} ago | <Link href={`comments/${id}`}>{`${totalReplies || 0} Replies`}</Link>
         </span>
-        <p className={style.text}>{text}</p>
+        <p className={style.text} dangerouslySetInnerHTML={{
+            __html: text
+        }}></p>
     </div>)
 }
